@@ -5,8 +5,8 @@ import SearchBar from './SearchBar';
 import { ButtonGroup, Button } from 'react-bootstrap';
 
 const env = process.env.NODE_ENV || "development";
+// Both dev and prod point to the same endpoint for now, can be changed later.
 const config = require('./env.json')[env];
-
 class App extends Component {
 
   constructor(props) {
@@ -31,7 +31,7 @@ class App extends Component {
         "url": url 
       })
     };
-    
+
     fetch(config.apiBasePath + config.getDataEndpoint, options)
     .then((response) =>{
       return response.json()

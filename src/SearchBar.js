@@ -21,7 +21,7 @@ class SearchBar extends React.Component {
         placeholder="https://www.google.com"
         inputRef={input => this.textInput = input} 
         />
-        <Button onClick={() => this.props.handler(this.textInput.value)} type="submit">Srape!</Button>
+        <Button onClick={() => this.props.handler(this.textInput.value)} type="submit">Scrape!</Button>
       </FormGroup>
     );
   }

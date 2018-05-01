@@ -20,7 +20,7 @@ class TextHighlight extends React.Component{
             <div>
                 { sections.map((section, i) => (
                     regex.test(section) ? 
-                    <mark key={i}>
+                    <mark style={{'backgroundColor': 'yellow'}} key={i}>
                         {section}
                     </mark> 
                     : 

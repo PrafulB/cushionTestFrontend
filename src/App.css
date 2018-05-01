@@ -10,9 +10,7 @@
 .text {
   text-align: left;
 }
-mark {
-  background-color:red;
-}
+
 .App-header {
   background-color: #222;
   height: 150px;
